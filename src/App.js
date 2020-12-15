@@ -7,7 +7,7 @@ import { blue } from '@material-ui/core/colors';
 
 import Routes from './routes'
 
-import { Loading, Notify } from './view/components'
+import { Loading, Notify, Alert } from './view/components'
 
 const theme = createMuiTheme({
   palette: {
@@ -31,6 +31,7 @@ function App() {
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
+        <Alert />
         <Notify />
         <Loading />
         <Routes />

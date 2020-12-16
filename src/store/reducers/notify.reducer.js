@@ -1,7 +1,7 @@
 import { actionTypes } from '../actions/notify.action'
 
 const initialState = {
-  open: true,
+  open: false,
   horizontal: 'center',
   vertical: 'top',
   class: 'success',
